@@ -1,19 +1,30 @@
-# 🧩 FastAPI 12-Factor Task App
+# FastAPI 12-Factor App To-Do
 
-A small task manager API built using **FastAPI**, following the [12-Factor App principles](https://12factor.net/).  
-This project is managed entirely on GitHub, no local development required.
+This is a simple To-Do application built with FastAPI demonstrating the [12-Factor App](https://12factor.net/) principles.
 
----
+## Features
 
-## 🚀 Features
+- REST API for managing To-Do tasks
+- Uses SQLAlchemy ORM with SQLite database
+- Configurable via environment variables (`.env`)
+- Dockerized for easy deployment
+- Ready for cloud deployment (e.g., Railway)
 
-- Create / Read / Update / Delete (CRUD) task items
-- SQLite database for simplicity
-- Environment-based configuration using `.env`
-- Docker support for containerized deployment
-- Organized using FastAPI best practices (app/ folder)
+## Project Structure
 
----
+- `app/main.py`: FastAPI app entry point
+- `app/models.py`: Database models
+- `app/schemas.py`: Pydantic schemas for request/response
+- `app/crud.py`: CRUD operations for database
+- `app/database.py`: Database connection setup
+- `.env.example`: Example environment variables file
+- `Dockerfile`: Docker setup to containerize app
+- `requirements.txt`: Python dependencies
 
-## 📁 Project Structure
+## How to Run Locally
 
+1. Clone the repo:
+
+   ```bash
+   git clone https://github.com/Tulip-Gyawali/fastapi_12factorapp_to_do.git
+   cd fastapi_12factorapp_to_do
